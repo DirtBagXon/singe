@@ -281,7 +281,7 @@ void CFG_Keys()
 											{
 												if (val3 > 0 ) joystick_buttons_map[val3 - 1] = i;
 											}
-											else printf("sorry we only support %d joystick buttons we could not map button %d please check your dapinput.ini\n",max_buttons, val3 - 1 );
+											else printf("sorry we only support %d joystick buttons we could not map button %d please check your singeinput.ini\n",max_buttons, val3 - 1 );
 											found_match = true;
 											break;
 										}
