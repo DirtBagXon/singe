@@ -1,3 +1,10 @@
+Singe v2.0 released by the original author
+==========================================
+
+This is a total rewrite from the ground up adding numerous features while staying compatible with existing 1.x games.
+
+https://kangaroopunch.com/?page=Software/3000-2006-singe.xjs
+
 Standalone Singe (v1.18) for Linux
 ==================================
 
@@ -31,8 +38,8 @@ https://github.com/DirtBagXon/singe/tree/master/bytecode
 
 Install them thus:
 
-    mv ~/.daphne/singe/timegal/timegal.singe ~/.daphne/singe/timegal/timegal.singe.old
-    mv ~/.daphne/singe/hayate/hayate.singe ~/.daphne/singe/hayate/hayate.singe.old
+    mv ~/.daphne/singe/timegal/timegal.singe ~/.daphne/singe/timegal/timegal.singe.orig
+    mv ~/.daphne/singe/hayate/hayate.singe ~/.daphne/singe/hayate/hayate.singe.orig
 
     cp bytecode/timegal.singe ~/.daphne/singe/timegal/timegal.singe
     cp bytecode/hayate.singe ~/.daphne/singe/hayate/hayate.singe
