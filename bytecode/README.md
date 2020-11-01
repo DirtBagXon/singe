@@ -1,19 +1,26 @@
-# Bytecode errors observed
+# All issues have now been addressed in codebase
+
+## !! The replacement files here are no longer required !!
+
+- Ensure you are using the latest codebase.
+- Use original game *.singe* files.
+
+### Maintained here for reference only
 
 - 32bit `.singe` bytecode reported `SINGE: error compiling script: bad header in precompiled chunk` on 64bit systems.
 - Games distributed using compiled Lua bytecode, contained all code within a single compiled `.singe` file.
 - Errors were observed when attempting to run `Time Gal` and `Ninja Hayate`. Detailed below.
-- Fixes to source code and underlying Lua code were required to enable games to run.
+- Fixes to source code ~~and underlying Lua code~~ were required to enable games to run.
  
 The modified `.singe` files in this directory, address the nil arithmetic issues in `Time Gal` and `Ninja Hayate`.
  
 *N.B. These replacement files are 32bit bytecode, however work with both 64bit and 32bit versions of this binary.*
 
-**ENSURE YOU HAVE A BACKUP FIRST**
+**!! ENSURE YOU HAVE A BACKUP FIRST !! - THESE FILES ARE NO LONGER REQUIRED**
 
 The new files should overwrite any existing files in the game directory.
 
-**ENSURE YOU HAVE A BACKUP FIRST**
+**!! ENSURE YOU HAVE A BACKUP FIRST !! - THESE FILES ARE NO LONGER REQUIRED**
 
 ## Time Gal
 

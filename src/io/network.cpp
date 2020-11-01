@@ -177,7 +177,8 @@ unsigned int get_cpu_mhz()
 	F = popen(s, "r");
 	if (F)
 	{
-		fscanf(F, "%lf", &mhz);
+		if (fscanf(F, "%lf", &mhz) != 1)
+		  fprintf(stderr, "Failed to read cpuinfo_max_freq!\n");
 		pclose(F);
 		mhz = (mhz / 1000);
 	}
@@ -389,7 +390,8 @@ char *get_cpu_name()
 	F = popen(s, "r");
 	if (F)
 	{
-		fscanf(F, "%s", cpu);
+		if (fscanf(F, "%s", cpu) != 1)
+		  fprintf(stderr, "Failed to read cpuinfo!\n");
 		pclose(F);
 	}
 	strcpy(result, cpu);

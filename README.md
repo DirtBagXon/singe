@@ -1,9 +1,11 @@
 Singe v2.0 released by the original author
 ==========================================
 
-This is a total rewrite from the ground up adding numerous features while staying compatible with existing 1.x games.
+A total rewrite adding numerous features while staying compatible with existing 1.x games.
 
 https://kangaroopunch.com/?page=Software/3000-2006-singe.xjs
+
+For traditionalists, the v1.x codebase can be compiled by following the instructions below.
 
 Standalone Singe (v1.18) for Linux
 ==================================
@@ -25,24 +27,6 @@ https://github.com/DirtBagXon/singe/blob/master/patches/singe_1.18.diff
 ### Changelog
 
 https://github.com/DirtBagXon/singe/blob/master/CHANGELOG.md
-
-### Time Gal and Ninja Hayate Issues
-
-Nearly all the issues I have seen in using this repo are based on the games **Time Gal** and **Ninja Hayate**. \
-These games have issues due to the original `.singe` files being **compiled** 32bit LUA bytecode.
-
-You will need to download and use replacement bytecode files with this repository to run these games. \
-The changes are minimal and are documented, along with the replacement files, in the bytecode folder of this repo:
-
-https://github.com/DirtBagXon/singe/tree/master/bytecode
-
-Install them thus:
-
-    mv ~/.daphne/singe/timegal/timegal.singe ~/.daphne/singe/timegal/timegal.singe.orig
-    mv ~/.daphne/singe/hayate/hayate.singe ~/.daphne/singe/hayate/hayate.singe.orig
-
-    cp bytecode/timegal.singe ~/.daphne/singe/timegal/timegal.singe
-    cp bytecode/hayate.singe ~/.daphne/singe/hayate/hayate.singe
 
 ### Local changes
 
@@ -80,13 +64,10 @@ This corrects an _overlay misalignment_ and checks for another _out-of-bounds se
      cd ..
      mkdir -p ~/.daphne/singe
      cp pics/singeme.bmp ~/.daphne/pics/
+     cp pics/gamenowook.bmp ~/.daphne/pics/
      cp sound/grumble.wav ~/.daphne/sound/
 
-### On a fresh install, add all sounds and images
-
-     cp -a pics sound ~/.daphne/
-
-### Install precompiled binaries
+### Or install precompiled binaries
 
     cd binaries/$(uname -m)
     cp *.so singe.bin ../..
@@ -113,17 +94,16 @@ https://github.com/DirtBagXon/singe/blob/master/ACTIONMAX.md
 
 https://github.com/DavidGriffith/daphne
 
-### GUI frontend
-
-A simplified GTK `DapnheLoader` clone frontend: https://github.com/DirtBagXon/ldfrontend
-
-![singeloader](https://raw.githubusercontent.com/DirtBagXon/singe/master/screenshots/singelauncher.png)
-
 ### CLI run games
 
      ./run.sh timegal
      ./actionmax.sh popsghostly
 
+### GUI frontend
+
+A simplified GTK `DapnheLoader` clone frontend: https://github.com/DirtBagXon/ldfrontend
+
+![singeloader](https://raw.githubusercontent.com/DirtBagXon/singe/master/screenshots/singelauncher.png)
 
 More screenshots within the `screenshots` directory.
 

@@ -32,6 +32,18 @@
 #define MAXTAGLOOP	100
 
 
+const TValue *luaV_tofloat (const TValue *obj, TValue *n) {
+  lua_Number num;
+  if (ttisnumber(obj)) return obj;
+  if (ttisstring(obj) && luaO_str2d(svalue(obj), &num)) {
+    setnvalue(n, num);
+  }
+  else
+    setnvalue(n, 0);
+  return n;
+}
+
+
 const TValue *luaV_tonumber (const TValue *obj, TValue *n) {
   lua_Number num;
   if (ttisnumber(obj)) return obj;
