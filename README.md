@@ -54,24 +54,26 @@ This corrects an _overlay misalignment_ and checks for another _out-of-bounds se
 
 ### Compile and install
 
-     cd src/vldp2
-     ./configure --disable-accel-detect
-     make -f Makefile.linux
-     cd ../game/singe
-     make -f Makefile.linux
-     cd ../..
-     make
-     cd ..
-     mkdir -p ~/.daphne/singe
-     cp pics/singeme.bmp ~/.daphne/pics/
-     cp pics/gamenowook.bmp ~/.daphne/pics/
-     cp sound/grumble.wav ~/.daphne/sound/
+    cd src/vldp2
+    ./configure --disable-accel-detect
+    make -f Makefile.linux
+    cd ../game/singe
+    make -f Makefile.linux
+    cd ../..
+    make
+    cd ..
 
 ### Or install precompiled binaries
 
     cd binaries/$(uname -m)
     cp *.so singe.bin ../..
     cd ../..
+
+### Then install images and sounds
+
+    mkdir -p ~/.daphne/singe ~/.daphne/pics ~/.daphne/sound
+    cp pics/* ~/.daphne/pics/
+    cp sound/grumble.wav ~/.daphne/sound/
 
 ### Game data files
 
