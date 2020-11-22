@@ -109,3 +109,18 @@ A simplified GTK `DapnheLoader` clone frontend: https://github.com/DirtBagXon/ld
 
 More screenshots within the `screenshots` directory.
 
+## F.A.Q.
+
+* *Time Gal* and *Ninja Hayate* crash on game start
+    * This previously required altered bytecode: ~~[Bytecode](bytecode/README.md)~~
+    * However, it is now fixed in the latest codebase, ensure you are running the latest commit.
+
+* Fullscreen '**./run.sh -fullscreen \<game\>**' does not work, but produces no error.
+   * Try **-fullscreen_window** instead, using **SDL_NOFRAME** instead of **SDL_FULLSCREEN**
+   * This can be altered in the *run.sh* thus:
+#
+    if [ "$1" = "-fullscreen" ]; then
+    -   FULLSCREEN="-fullscreen"
+    +   FULLSCREEN="-fullscreen_window"
+        shift
+    fi
