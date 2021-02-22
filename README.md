@@ -24,6 +24,12 @@ https://github.com/DirtBagXon/singe/blob/master/patches/singe_1.18.diff
 
 **This repository contains source and binaries for** `x86_64` _Debian_ **&** `armv7l` _Raspbian_ **linux.**
 
+### RetroPie Installation
+
+There is an detailed post in the RetroPie forums on getting Singe up and running:
+
+[Retropie Forum - Singe](https://retropie.org.uk/forum/post/252674)
+
 ### Changelog
 
 https://github.com/DirtBagXon/singe/blob/master/CHANGELOG.md
