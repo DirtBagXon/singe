@@ -17,6 +17,7 @@ export LD_LIBRARY_PATH=$SCRIPT_DIR:$DAPHNE_SHARE:$LD_LIBRARY_PATH
 
 if [ "$1" = "-fullscreen" ]; then
     FULLSCREEN="-fullscreen"
+    #FULLSCREEN="-fullscreen_window"
     shift
 fi
 

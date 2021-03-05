@@ -85,6 +85,8 @@ This corrects an _overlay misalignment_ and checks for another _out-of-bounds se
 
 **There is no game data in this repository. You will need to aquire game data files elsewhere to utilise this software.**
 
+[Certain game data may be found on Archive.org](https://archive.org/details/@dirtbagxon)
+
 Game data should be copied into ~/.daphne/singe/ within a sub-directory name matching the game title.
 
 The primary .singe and .txt framefiles should also match this naming convention within the game sub-directory.
@@ -123,10 +125,10 @@ More screenshots within the `screenshots` directory.
 
 * Fullscreen '**./run.sh -fullscreen \<game\>**' does not work, but produces no error.
    * Try **-fullscreen_window** instead, using **SDL_NOFRAME** instead of **SDL_FULLSCREEN**
-   * This can be altered in the *run.sh* thus:
+   * This can be defined in the *run.sh* by (un)commenting the required **FULLSCREEN** value:
 #
     if [ "$1" = "-fullscreen" ]; then
-    -   FULLSCREEN="-fullscreen"
-    +   FULLSCREEN="-fullscreen_window"
+        FULLSCREEN="-fullscreen"
+        #FULLSCREEN="-fullscreen_window"
         shift
     fi
