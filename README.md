@@ -1,11 +1,12 @@
-Singe v2.0 released by the original author
-==========================================
+Hypseus Singe now supersedes Daphne Singe
+=========================================
 
-A total rewrite adding numerous features while staying compatible with existing 1.x games.
+This Singe project has now been superseded by the **SDL2** project **hypseus-singe**
 
-https://kangaroopunch.com/?page=Software/3000-2006-singe.xjs
+https://github.com/DirtBagXon/hypseus-singe
 
-For traditionalists, the v1.x codebase can be compiled by following the instructions below.
+Below is the original Daphne Singe codebase preserved for posterity.
+
 
 Standalone Singe (v1.18) for Linux
 ==================================
